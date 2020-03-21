@@ -26,14 +26,6 @@ app.use(express.json());
 // allow cross origin resource sharing
 app.use(cors());
 
-// if in Production, serve files from build directory
-if (PORT) {
-  app.use(express.static(path.join(__dirname, "./build")));
-  app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname + "./build/index.html"));
-  });
-}
-
 //profile/:userId --> GET Request --> {user}
 app.get("/", (req, res) => {
   res.send("App is working!");
