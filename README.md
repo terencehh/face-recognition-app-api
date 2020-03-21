@@ -1,10 +1,10 @@
-# Welcome to Face Recognition App
+# Welcome to Face Recognition App API
 
 > Full Stack App developed primarily using React.js, Node.js, Express.js, PostgreSQL. This app identifies & detects faces in any image supplied.
 
 ## Instructions
 
-> The App is split into two components, the React Front-End and Server Back-End. To simulate a client-server environment, please go to my server API repo https://github.com/terencehh/face-recognition-app-api and follow the instructions there.
+> The App is split into two components, This repo hosts the server/database side. To simulate a client-server environment, please go to my Front-End React Repo https://github.com/terencehh/face-recognition-app and follow the instructions there as well.
 
 ## Install
 
@@ -15,7 +15,7 @@ npm install
 ## Usage
 
 ```sh
-npm start
+node server.js
 ```
 
 ## Author
