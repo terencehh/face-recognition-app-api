@@ -19,6 +19,8 @@ const db = knex({
     ssl: true
   }
 });
+// https://protected-scrubland-83638.herokuapp.com/
+
 
 const app = express();
 // allow cross origin resource sharing
