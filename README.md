@@ -20,7 +20,7 @@ node server.js
 
 ## Author
 
-?? **Terence Ng**
+**Terence Ng**
 
 * Website: https://www.terencehh.engineer/
 * Github: [@terencehh](https://github.com/terencehh)
