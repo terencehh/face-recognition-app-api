@@ -10,7 +10,7 @@ const checkSignIn = (email, password) => {
 
 const checkRegister = (fname, lname, email, password, confirmPass) => {
   if (!fname || !lname || !email || !password || !confirmPass) {
-    return "Please fill in all fields.";
+    return "Please fill in all fields and try again.";
   }
 
   if (password !== confirmPass) {
@@ -47,7 +47,7 @@ const validPassword = password => {
 };
 
 // for checking names upon register - DEVELOP IN FUTURE
-const validName = name => {};
+const validName = name => { };
 
 module.exports = {
   checkSignIn,
