@@ -1,6 +1,5 @@
 // Express.js for server-side routing
 const express = require("express");
-const path = require("path");
 const PORT = process.env.PORT;
 
 // bcrypt for hashing passwords
@@ -22,9 +21,10 @@ const db = knex({
 });
 
 const app = express();
-app.use(express.json());
 // allow cross origin resource sharing
 app.use(cors());
+app.use(express.json());
+
 
 //profile/:userId --> GET Request --> {user}
 app.get("/", (req, res) => {
@@ -46,6 +46,6 @@ app.put("/image", image.handleImagePut(db));
 //API call to Clarifai
 app.post("/imageurl", image.handleApiCall());
 
-app.listen(process.env.PORT || 3000, () => {
+app.listen(PORT || 3000, () => {
   console.log(`Server Successfully Started on Port ${PORT}`);
 });
