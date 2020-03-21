@@ -13,7 +13,7 @@ const handleRegister = (db, bcrypt) => (req, res) => {
   );
 
   if (validateResult !== "Success") {
-    return res.status(400).json(validateResult);
+    return res.status(400).json("Please make sure all fields are keyed in correctly.");
   }
 
   // hash the password for security
