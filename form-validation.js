@@ -9,25 +9,38 @@ const checkSignIn = (email, password) => {
 };
 
 const checkRegister = (fname, lname, email, password, confirmPass) => {
+
+  const errorList = [];
+
   if (!fname || !lname || !email || !password || !confirmPass) {
-    return "Please fill in all fields and try again.";
+    errorList.push("Please fill in all fields and try again.")
   }
 
-  if (password !== confirmPass) {
-    return "Please make sure your two passwords match.";
+  const firstNameCheck = validName(fname, "first name");
+  if (firstNameCheck !== "Success") {
+    errorList.push(firstNameCheck)
   }
 
-  const passCheck = validPassword(password);
-  if (passCheck !== "Success") {
-    return passCheck;
+  const lastNameCheck = validName(lname, "last name");
+  if (lastNameCheck !== "Success") {
+    errorList.push(lastNameCheck)
   }
 
   const emailCheck = validEmail(email);
   if (emailCheck !== "Success") {
-    return emailCheck;
+    errorList.push(emailCheck)
   }
 
-  return "Success";
+  const passCheck = validPassword(password);
+  if (passCheck !== "Success") {
+    errorList.push(passCheck)
+  }
+
+  if (password !== confirmPass) {
+    errorList.push("Please make sure your two passwords match.")
+  }
+
+  return errorList.length ? errorList : "Success"
 };
 
 const validEmail = email => {
@@ -46,8 +59,20 @@ const validPassword = password => {
   return "Success";
 };
 
-// for checking names upon register - DEVELOP IN FUTURE
-const validName = name => { };
+// for checking names upon register - max length is 50, first letter must be Capital.
+const validName = (name, type) => {
+
+  // remove all whitespaces and check if empty string
+  if (!name.replace(/\s/g, '').length) {
+    return `Please enter a valid ${type} with characters.`
+  }
+
+  if (!(/^[a-zA-Z\s]*$/.test(name))) {
+    return `Please ensure you only entered alphabets in the ${type} field`
+  }
+
+  return "Success"
+};
 
 module.exports = {
   checkSignIn,
