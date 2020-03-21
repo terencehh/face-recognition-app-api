@@ -1,4 +1,4 @@
-# Welcome to Face Recognition App API
+﻿# Welcome to Face Recognition App API
 
 > Full Stack App developed primarily using React.js, Node.js, Express.js, PostgreSQL. This app identifies & detects faces in any image supplied.
 
@@ -20,7 +20,7 @@ node server.js
 
 ## Author
 
-**Terence Ng**
+👤 **Terence Ng**
 
 * Website: https://www.terencehh.engineer/
 * Github: [@terencehh](https://github.com/terencehh)
@@ -28,8 +28,8 @@ node server.js
 
 ## Show your support
 
-Give a ?? if this project helped you!
+Give a ⭐️ if this project helped you!
 
 
 ***
-_This README was generated with ?? by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
