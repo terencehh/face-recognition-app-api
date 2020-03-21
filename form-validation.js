@@ -13,7 +13,7 @@ const checkRegister = (fname, lname, email, password, confirmPass) => {
   const errorList = [];
 
   if (!fname || !lname || !email || !password || !confirmPass) {
-    errorList.push("Please fill in all fields and try again.")
+    errorList.push("Please fill in all fields.")
   }
 
   const firstNameCheck = validName(fname, "first name");
