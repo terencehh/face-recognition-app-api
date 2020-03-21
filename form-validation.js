@@ -1,4 +1,4 @@
-// Industry practices states that instant validation is king for complicated form requests. However since this app is very basic and does not require much validation, we return validation only upon button submit instead.
+// creating instant validation
 
 const checkSignIn = (email, password) => {
   if (!email || !password) {
