@@ -1,6 +1,6 @@
 ﻿# Welcome to Face Recognition App API
 
-> Full Stack App developed primarily using React.js, Node.js, Express.js, PostgreSQL. This app identifies & detects faces in any image supplied. Data is stored securely using PostgreSQL, with passwords being hashed.
+> Full Stack App developed primarily using React.js, Node.js, Express.js, PostgreSQL. State Management is handled using Redux. This app identifies & detects faces in any image supplied. Data is stored securely using PostgreSQL, with passwords being hashed.
 
 ## Instructions
 
