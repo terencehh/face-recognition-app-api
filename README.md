@@ -4,7 +4,7 @@
 
 ## Instructions
 
-> The App is split into two components, This repo hosts the server/database side. To simulate a client-server environment, please go to my Front-End React Repo https://github.com/terencehh/face-recognition-app and follow the instructions there. Note that you will need to specify different port numbers on the client & server.
+> The App is split into two components, This repo hosts the server/database side. To simulate a client-server environment, please go to my Front-End React Repo https://github.com/terencehh/face-recognition-app and follow the instructions there. Note that you will need to specify different port numbers on the client & server. Another thing to note is that my App utilizes Clarifai's Face Detection API Model. If you want to deploy your own build, you will need to sign up with Clarifai and utilize their API Key in order to use their services.
 
 ## Install
 
