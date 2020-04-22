@@ -12,6 +12,7 @@ const signin = require("./controllers/sign-in");
 const profile = require("./controllers/profile");
 const image = require("./controllers/image");
 
+// SPECIFY YOUR DATABASE CONNECTION. Modify this line to suit to your own needs.
 const db = knex({
   client: "pg",
   connection: {
